@@ -43,6 +43,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/contact",
       "/disclaimer",
       "/privacy-policy",
+      "/start-here",
+      "/peptide-side-effects",
+      "/peptide-quality-testing",
+      "/peptide-research-safety",
+      "/reviews",
     ].map((route) => ({
       url: `${BASE_URL}${route}`,
       lastModified: new Date(),
