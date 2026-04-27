@@ -38,6 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...[
       "/peptide-coa-explained",
       "/how-to-identify-fake-peptides",
+      "/about",
     ].map((route) => ({
       url: `${BASE_URL}${route}`,
       lastModified: new Date(),
