@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import AffiliateBox from "@/components/AffiliateBox";
 
 export const metadata: Metadata = {
   title: "GHK-Cu: What the Research Actually Shows (2026)",
@@ -698,6 +699,12 @@ export default function GHKCuPage() {
           And with GHK-Cu, that separation is everything.
         </p>
       </section>
+
+      <AffiliateBox
+        productName="GHK-Cu"
+        productUrl="https://ascensionpeptides.com/product/ghk-cu-100mg/?ref=Biohackingunlocked"
+        size="100mg"
+      />
 
       {/* Related Reading */}
       <section className="mt-12">

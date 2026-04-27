@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import AffiliateBox from "@/components/AffiliateBox";
 
 export const metadata: Metadata = {
   title: "Ipamorelin: What the Research Actually Shows (2026)",
@@ -547,6 +548,11 @@ export default function IpamorelinPage() {
           research discussion becomes almost irrelevant.
         </p>
       </section>
+
+      <AffiliateBox
+        productName="Ipamorelin"
+        productUrl="https://ascensionpeptides.com/Ipamorelin/ref/Biohackingunlocked/"
+      />
 
       {/* What isn't settled yet */}
       <section className="mt-12">

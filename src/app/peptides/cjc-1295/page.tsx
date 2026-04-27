@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import AffiliateBox from "@/components/AffiliateBox";
 
 export const metadata: Metadata = {
   title: "CJC-1295: What the Research Actually Shows (2026)",
@@ -503,6 +504,12 @@ export default function CJC1295Page() {
           gray-market peptide world.
         </p>
       </section>
+
+      <AffiliateBox
+        productName="CJC-1295"
+        productUrl="https://ascensionpeptides.com/product/cjc-1295-5mg/?ref=Biohackingunlocked"
+        size="5mg"
+      />
 
       {/* What isn't settled yet */}
       <section className="mt-12">

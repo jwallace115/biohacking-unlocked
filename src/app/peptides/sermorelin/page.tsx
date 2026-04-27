@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import AffiliateBox from "@/components/AffiliateBox";
 
 export const metadata: Metadata = {
   title: "Sermorelin: What the Research Actually Shows (2026)",
@@ -489,6 +490,11 @@ export default function SermorelinPage() {
           </div>
         </div>
       </section>
+
+      <AffiliateBox
+        productName="Sermorelin"
+        productUrl="https://ascensionpeptides.com/Sermorelin/ref/Biohackingunlocked/"
+      />
 
       {/* What isn't settled yet */}
       <section className="mt-12">

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import COABadge from "@/components/COABadge";
+import AffiliateBox from "@/components/AffiliateBox";
 
 export const metadata: Metadata = {
   title: "BPC-157: What the Research Actually Shows (2026)",
@@ -461,6 +462,12 @@ export default function BPC157Page() {
           </p>
         </div>
       </section>
+
+      <AffiliateBox
+        productName="BPC-157"
+        productUrl="https://ascensionpeptides.com/product/bpc-157-10mg/?ref=Biohackingunlocked"
+        size="10mg"
+      />
 
       {/* What isn't settled yet */}
       <section className="mt-12">

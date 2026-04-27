@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import AffiliateBox from "@/components/AffiliateBox";
 
 export const metadata: Metadata = {
   title: "TB-500: What the Research Actually Shows (2026)",
@@ -620,6 +621,12 @@ export default function TB500Page() {
           You still have to actually get the peptide in the vial.
         </p>
       </section>
+
+      <AffiliateBox
+        productName="TB-500"
+        productUrl="https://ascensionpeptides.com/product/tb-500-5mg/?ref=Biohackingunlocked"
+        size="5mg"
+      />
 
       {/* What isn't settled yet */}
       <section className="mt-12">
