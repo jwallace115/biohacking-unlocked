@@ -89,7 +89,7 @@ export default function GHKCuPage() {
 
       <AffiliateBox
         productName="GHK-Cu"
-        productUrl="https://ascensionpeptides.com/product/ghk-cu-100mg/?ref=Biohackingunlocked"
+        productUrl="https://ascensionpeptides.com/product/ghk-cu-100mg/ref/Biohackingunlocked/"
         size="100mg"
       />
 

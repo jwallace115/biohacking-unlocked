@@ -88,7 +88,7 @@ export default function SemaxPage() {
 
       <AffiliateBox
         productName="Semax"
-        productUrl="https://ascensionpeptides.com/product/semax-10mg/?ref=Biohackingunlocked"
+        productUrl="https://ascensionpeptides.com/product/semax-10mg/ref/Biohackingunlocked/"
         size="10mg"
       />
 

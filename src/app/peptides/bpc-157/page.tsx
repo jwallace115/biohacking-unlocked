@@ -69,7 +69,7 @@ export default function BPC157Page() {
 
       <AffiliateBox
         productName="BPC-157"
-        productUrl="https://ascensionpeptides.com/product/bpc-157-10mg/?ref=Biohackingunlocked"
+        productUrl="https://ascensionpeptides.com/product/bpc-157-10mg/ref/Biohackingunlocked/"
         size="10mg"
       />
 
@@ -596,12 +596,6 @@ export default function BPC157Page() {
         <h2 className="text-xl font-bold text-navy">Related Reading</h2>
         <div className="mt-4 flex flex-wrap gap-3">
           <Link
-            href="/bpc-157-vs-tb-500"
-            className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-navy hover:border-accent hover:text-accent-dark transition-colors"
-          >
-            BPC-157 vs TB-500
-          </Link>
-          <Link
             href="/peptides/tb-500"
             className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-navy hover:border-accent hover:text-accent-dark transition-colors"
           >
@@ -612,12 +606,6 @@ export default function BPC157Page() {
             className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-navy hover:border-accent hover:text-accent-dark transition-colors"
           >
             The Wolverine Stack: BPC-157 + TB-500
-          </Link>
-          <Link
-            href="/peptides-for-recovery"
-            className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-navy hover:border-accent hover:text-accent-dark transition-colors"
-          >
-            Peptides for Recovery
           </Link>
           <Link
             href="/best-peptide-sources"

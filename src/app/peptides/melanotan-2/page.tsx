@@ -85,7 +85,7 @@ export default function MelanotanIIPage() {
 
       <AffiliateBox
         productName="Melanotan II"
-        productUrl="https://ascensionpeptides.com/product/melanotan-ii-10mg/?ref=Biohackingunlocked"
+        productUrl="https://ascensionpeptides.com/product/melanotan-ii-10mg/ref/Biohackingunlocked/"
         size="10mg"
       />
 

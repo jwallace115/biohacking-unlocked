@@ -86,7 +86,7 @@ export default function RetatrutidePage() {
 
       <AffiliateBox
         productName="Retatrutide"
-        productUrl="https://ascensionpeptides.com/product/retatrutide/?ref=Biohackingunlocked"
+        productUrl="https://ascensionpeptides.com/product/retatrutide/ref/Biohackingunlocked/"
       />
 
       {/* What Retatrutide actually is */}

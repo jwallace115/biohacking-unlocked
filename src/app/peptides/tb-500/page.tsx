@@ -80,7 +80,7 @@ export default function TB500Page() {
 
       <AffiliateBox
         productName="TB-500"
-        productUrl="https://ascensionpeptides.com/product/tb-500-5mg/?ref=Biohackingunlocked"
+        productUrl="https://ascensionpeptides.com/product/tb-500-5mg/ref/Biohackingunlocked/"
         size="5mg"
       />
 

@@ -82,7 +82,7 @@ export default function CJC1295Page() {
 
       <AffiliateBox
         productName="CJC-1295"
-        productUrl="https://ascensionpeptides.com/product/cjc-1295-5mg/?ref=Biohackingunlocked"
+        productUrl="https://ascensionpeptides.com/product/cjc-1295-5mg/ref/Biohackingunlocked/"
         size="5mg"
       />
 

@@ -77,7 +77,7 @@ export default function SelankPage() {
 
       <AffiliateBox
         productName="Selank"
-        productUrl="https://ascensionpeptides.com/product/selank-10mg/?ref=Biohackingunlocked"
+        productUrl="https://ascensionpeptides.com/product/selank-10mg/ref/Biohackingunlocked/"
         size="10mg"
       />
 
