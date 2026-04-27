@@ -657,6 +657,12 @@ export default function IpamorelinPage() {
             CJC-1295: What the Research Actually Shows
           </Link>
           <Link
+            href="/peptides/gh-stack"
+            className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-navy hover:border-accent hover:text-accent-dark transition-colors"
+          >
+            The GH Stack: CJC-1295 + Ipamorelin
+          </Link>
+          <Link
             href="/peptides/bpc-157"
             className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-navy hover:border-accent hover:text-accent-dark transition-colors"
           >
