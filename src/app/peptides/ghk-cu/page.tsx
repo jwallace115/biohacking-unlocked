@@ -85,6 +85,12 @@ export default function GHKCuPage() {
         the research, I am saying that out loud.
       </p>
 
+      <AffiliateBox
+        productName="GHK-Cu"
+        productUrl="https://ascensionpeptides.com/product/ghk-cu-100mg/?ref=Biohackingunlocked"
+        size="100mg"
+      />
+
       {/* What GHK-Cu actually is */}
       <section className="mt-12">
         <h2 className="text-2xl font-bold text-navy">
@@ -699,12 +705,6 @@ export default function GHKCuPage() {
           And with GHK-Cu, that separation is everything.
         </p>
       </section>
-
-      <AffiliateBox
-        productName="GHK-Cu"
-        productUrl="https://ascensionpeptides.com/product/ghk-cu-100mg/?ref=Biohackingunlocked"
-        size="100mg"
-      />
 
       {/* Related Reading */}
       <section className="mt-12">

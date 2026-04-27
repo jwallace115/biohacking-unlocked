@@ -99,6 +99,11 @@ export default function SermorelinPage() {
         the research, I am saying that out loud.
       </p>
 
+      <AffiliateBox
+        productName="Sermorelin"
+        productUrl="https://ascensionpeptides.com/Sermorelin/ref/Biohackingunlocked/"
+      />
+
       {/* What Sermorelin actually is */}
       <section className="mt-12">
         <h2 className="text-2xl font-bold text-navy">
@@ -490,11 +495,6 @@ export default function SermorelinPage() {
           </div>
         </div>
       </section>
-
-      <AffiliateBox
-        productName="Sermorelin"
-        productUrl="https://ascensionpeptides.com/Sermorelin/ref/Biohackingunlocked/"
-      />
 
       {/* What isn't settled yet */}
       <section className="mt-12">

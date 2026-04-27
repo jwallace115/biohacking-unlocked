@@ -65,6 +65,12 @@ export default function BPC157Page() {
         loud.
       </p>
 
+      <AffiliateBox
+        productName="BPC-157"
+        productUrl="https://ascensionpeptides.com/product/bpc-157-10mg/?ref=Biohackingunlocked"
+        size="10mg"
+      />
+
       {/* What BPC-157 actually is */}
       <section className="mt-12">
         <h2 className="text-2xl font-bold text-navy">
@@ -462,12 +468,6 @@ export default function BPC157Page() {
           </p>
         </div>
       </section>
-
-      <AffiliateBox
-        productName="BPC-157"
-        productUrl="https://ascensionpeptides.com/product/bpc-157-10mg/?ref=Biohackingunlocked"
-        size="10mg"
-      />
 
       {/* What isn't settled yet */}
       <section className="mt-12">

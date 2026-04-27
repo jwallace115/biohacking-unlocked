@@ -76,6 +76,12 @@ export default function TB500Page() {
         saying as of April 2026, and where the picture is still being painted.
       </p>
 
+      <AffiliateBox
+        productName="TB-500"
+        productUrl="https://ascensionpeptides.com/product/tb-500-5mg/?ref=Biohackingunlocked"
+        size="5mg"
+      />
+
       {/* What TB-500 actually is */}
       <section className="mt-12">
         <h2 className="text-2xl font-bold text-navy">
@@ -621,12 +627,6 @@ export default function TB500Page() {
           You still have to actually get the peptide in the vial.
         </p>
       </section>
-
-      <AffiliateBox
-        productName="TB-500"
-        productUrl="https://ascensionpeptides.com/product/tb-500-5mg/?ref=Biohackingunlocked"
-        size="5mg"
-      />
 
       {/* What isn't settled yet */}
       <section className="mt-12">

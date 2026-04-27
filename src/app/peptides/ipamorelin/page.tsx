@@ -74,6 +74,11 @@ export default function IpamorelinPage() {
         the research, I am saying that out loud.
       </p>
 
+      <AffiliateBox
+        productName="Ipamorelin"
+        productUrl="https://ascensionpeptides.com/Ipamorelin/ref/Biohackingunlocked/"
+      />
+
       {/* What Ipamorelin actually is */}
       <section className="mt-12">
         <h2 className="text-2xl font-bold text-navy">
@@ -548,11 +553,6 @@ export default function IpamorelinPage() {
           research discussion becomes almost irrelevant.
         </p>
       </section>
-
-      <AffiliateBox
-        productName="Ipamorelin"
-        productUrl="https://ascensionpeptides.com/Ipamorelin/ref/Biohackingunlocked/"
-      />
 
       {/* What isn't settled yet */}
       <section className="mt-12">

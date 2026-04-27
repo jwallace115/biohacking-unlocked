@@ -78,6 +78,12 @@ export default function CJC1295Page() {
         the research, I am saying that out loud.
       </p>
 
+      <AffiliateBox
+        productName="CJC-1295"
+        productUrl="https://ascensionpeptides.com/product/cjc-1295-5mg/?ref=Biohackingunlocked"
+        size="5mg"
+      />
+
       {/* What CJC-1295 actually is */}
       <section className="mt-12">
         <h2 className="text-2xl font-bold text-navy">
@@ -504,12 +510,6 @@ export default function CJC1295Page() {
           gray-market peptide world.
         </p>
       </section>
-
-      <AffiliateBox
-        productName="CJC-1295"
-        productUrl="https://ascensionpeptides.com/product/cjc-1295-5mg/?ref=Biohackingunlocked"
-        size="5mg"
-      />
 
       {/* What isn't settled yet */}
       <section className="mt-12">
