@@ -45,6 +45,7 @@ const popularGuides = [
   { name: "GHK-Cu", href: "/peptides/ghk-cu" },
   { name: "CJC-1295", href: "/peptides/cjc-1295" },
   { name: "Ipamorelin", href: "/peptides/ipamorelin" },
+  { name: "Retatrutide", href: "/peptides/retatrutide" },
   { name: "Selank", href: "/peptides/selank" },
   { name: "Semax", href: "/peptides/semax" },
 ];
