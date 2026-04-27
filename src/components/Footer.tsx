@@ -1,19 +1,34 @@
 import Link from "next/link";
 
-const footerLinks = [
+const navLinks = [
   { href: "/", label: "Home" },
   { href: "/peptides", label: "Peptides" },
-  { href: "/vendors", label: "Vendors" },
+  { href: "/best-peptide-sources", label: "Best Sources" },
+  { href: "/reviews", label: "Reviews" },
   { href: "/start-here", label: "Start Here" },
   { href: "/about", label: "About" },
+];
+
+const resourceLinks = [
+  { href: "/peptides/what-are-peptides", label: "What Are Peptides?" },
+  { href: "/peptides/peptide-safety", label: "Peptide Safety" },
+  { href: "/peptide-coa-explained", label: "COA Explained" },
+  { href: "/peptide-quality-testing", label: "Quality Testing" },
+  { href: "/how-to-identify-fake-peptides", label: "Spot Fake Peptides" },
+];
+
+const legalLinks = [
   { href: "/disclaimer", label: "Disclaimer" },
+  { href: "/privacy-policy", label: "Privacy Policy" },
+  { href: "/editorial-policy", label: "Editorial Policy" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Footer() {
   return (
     <footer className="bg-navy text-white/70 mt-auto">
       <div className="mx-auto max-w-6xl px-4 py-12">
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-4">
           {/* Brand */}
           <div>
             <p className="text-lg font-bold text-white">
@@ -25,13 +40,32 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Nav */}
+          {/* Navigate */}
           <div>
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-white">
               Navigate
             </p>
             <ul className="space-y-2">
-              {footerLinks.map((link) => (
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm hover:text-white transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Resources */}
+          <div>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-white">
+              Resources
+            </p>
+            <ul className="space-y-2">
+              {resourceLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -49,16 +83,21 @@ export default function Footer() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-white">
               Legal
             </p>
-            <p className="text-xs leading-relaxed">
-              This site is for informational and educational purposes only. We
-              are not medical professionals. Nothing on this site should be
-              construed as medical advice. All products discussed are intended
-              for research purposes only. Adults only (18+).
-            </p>
-            <p className="mt-3 text-xs leading-relaxed">
+            <ul className="space-y-2">
+              {legalLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm hover:text-white transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 text-xs leading-relaxed">
               This site contains affiliate links. We may earn a commission when
-              you purchase through our links at no extra cost to you. We only
-              recommend vendors we have personally vetted for COA compliance.
+              you purchase through our links at no extra cost to you.
             </p>
           </div>
         </div>
