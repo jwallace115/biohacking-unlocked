@@ -33,5 +33,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.8,
     })),
+    ...[
+      "/peptide-coa-explained",
+      "/how-to-identify-fake-peptides",
+    ].map((route) => ({
+      url: `${BASE_URL}${route}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    })),
   ];
 }
