@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/peptides/ipamorelin",
       "/peptides/sermorelin",
       "/peptides/retatrutide",
+      "/peptides/melanotan-2",
     ].map((route) => ({
       url: `${BASE_URL}${route}`,
       lastModified: new Date(),
