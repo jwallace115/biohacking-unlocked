@@ -87,11 +87,17 @@ const compoundGuides = [
   },
 ];
 
-const comparisonPages = [
-  { title: "BPC-157 vs TB-500", href: "/bpc-157-vs-tb-500" },
-  { title: "CJC-1295 vs Ipamorelin", href: "/cjc-1295-vs-ipamorelin" },
-  { title: "GHK-Cu vs Collagen", href: "/ghk-cu-vs-collagen" },
-  { title: "Selank vs Semax", href: "/selank-vs-semax" },
+const stackPages = [
+  {
+    title: "The Wolverine Stack: BPC-157 + TB-500",
+    href: "/peptides/wolverine-stack",
+    desc: "The most famous recovery stack — two repair angles in one protocol.",
+  },
+  {
+    title: "The GH Stack: CJC-1295 + Ipamorelin",
+    href: "/peptides/gh-stack",
+    desc: "Two GH switches pressed at once — the community\u2019s go-to GH protocol.",
+  },
 ];
 
 const goalPages = [
@@ -160,11 +166,11 @@ export default function PeptidesPage() {
         </div>
       </section>
 
-      {/* Comparisons */}
+      {/* Stacks */}
       <section className="mt-12">
-        <h2 className="text-2xl font-bold text-navy">Head-to-Head Comparisons</h2>
+        <h2 className="text-2xl font-bold text-navy">Peptide Stacks</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-2">
-          {comparisonPages.map((page) => (
+          {stackPages.map((page) => (
             <Link
               key={page.href}
               href={page.href}
@@ -173,8 +179,9 @@ export default function PeptidesPage() {
               <h3 className="font-semibold text-navy group-hover:text-accent-dark transition-colors">
                 {page.title}
               </h3>
+              <p className="mt-1 text-sm text-navy/60">{page.desc}</p>
               <span className="mt-2 inline-block text-sm font-medium text-accent-dark">
-                Compare &rarr;
+                Read guide &rarr;
               </span>
             </Link>
           ))}
