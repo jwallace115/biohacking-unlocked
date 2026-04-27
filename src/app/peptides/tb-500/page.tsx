@@ -773,6 +773,12 @@ export default function TB500Page() {
             BPC-157: What the Research Actually Shows
           </Link>
           <Link
+            href="/peptides/wolverine-stack"
+            className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-navy hover:border-accent hover:text-accent-dark transition-colors"
+          >
+            The Wolverine Stack: BPC-157 + TB-500
+          </Link>
+          <Link
             href="/best-peptide-sources"
             className="rounded-lg border border-accent bg-accent/10 px-4 py-2 text-sm font-medium text-accent-dark hover:bg-accent/20 transition-colors"
           >

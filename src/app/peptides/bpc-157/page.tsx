@@ -606,6 +606,12 @@ export default function BPC157Page() {
             TB-500 Guide
           </Link>
           <Link
+            href="/peptides/wolverine-stack"
+            className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-navy hover:border-accent hover:text-accent-dark transition-colors"
+          >
+            The Wolverine Stack: BPC-157 + TB-500
+          </Link>
+          <Link
             href="/peptides-for-recovery"
             className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-navy hover:border-accent hover:text-accent-dark transition-colors"
           >
