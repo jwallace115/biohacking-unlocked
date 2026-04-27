@@ -1,169 +1,223 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 
 export const metadata: Metadata = {
   title: "Editorial Policy — How We Research & Write",
   description:
-    "Learn about our editorial standards, fact-checking process, and commitment to evidence-based biohacking content.",
+    "How Biohacking Unlocked labels evidence, vets vendors, handles affiliate relationships, and maintains editorial standards. Written by Scott Williams.",
 };
 
 export default function EditorialPolicyPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-16 md:py-20">
+    <article className="mx-auto max-w-3xl px-4 py-16 md:py-20">
       <h1 className="text-3xl font-bold text-navy md:text-4xl">
         Editorial Policy
       </h1>
+      <p className="mt-2 text-sm text-navy/50">Last updated: April 2026</p>
+
+      <p className="mt-6 text-lg leading-relaxed text-navy/80">
+        Biohacking Unlocked exists to explain what peptide research actually
+        shows — not what vendors want it to show, and not what the most
+        enthusiastic forum posts claim.
+      </p>
       <p className="mt-4 leading-relaxed text-navy/70">
-        Everything published on Biohacking Unlocked is held to a consistent
-        standard of accuracy, transparency, and intellectual honesty. This page
-        explains exactly how we research, write, and maintain our content.
+        This page explains how that standard works in practice.
       </p>
 
-      {/* Our Standards */}
-      <section className="mt-10">
-        <h2 className="text-2xl font-bold text-navy">Our Standards</h2>
-        <p className="mt-3 leading-relaxed text-navy/70">
-          Placeholder: We hold every piece of content on this site to a strict
-          set of editorial standards. Claims must be traceable to a source —
-          either peer-reviewed research, official regulatory guidance, or
-          clearly flagged community reporting. We never publish speculative
-          content without labeling it as such.
+      {/* Who writes this site */}
+      <section className="mt-12">
+        <h2 className="text-2xl font-bold text-navy">Who writes this site</h2>
+        <p className="mt-4 leading-relaxed text-navy/70">
+          Every article on Biohacking Unlocked is written by Scott Williams, a
+          firefighter and paramedic in Florida with over 25 years of experience
+          as a first responder.
         </p>
-        <p className="mt-3 leading-relaxed text-navy/70">
-          Placeholder: Opinion is always distinguished from fact. When
-          something is our interpretation of the available evidence, we say so.
-          When the evidence is weak, thin, or conflicting, we say that too.
-          We would rather publish a shorter, honest article than a long one
-          padded with unverified claims.
+        <p className="mt-4 leading-relaxed text-navy/70">
+          Scott is not a doctor, pharmacist, or academic researcher. He is
+          someone who applied the same evidence-evaluation discipline he uses
+          professionally to a category of compounds his coworkers started using
+          — and decided to share what he found.
         </p>
-
-        <h3 className="mt-6 text-lg font-semibold text-navy">
-          Levels of Evidence
-        </h3>
-        <p className="mt-2 leading-relaxed text-navy/70">
-          Placeholder: We classify every factual claim according to its
-          evidence level — human clinical trials, animal studies, in-vitro
-          research, or community-reported anecdote. Each level is clearly
-          labeled so readers can weigh the information appropriately.
+        <p className="mt-4 leading-relaxed text-navy/70">
+          All articles reflect Scott&apos;s interpretation of the available
+          research. Where facts are stated, they are cited. Where opinions or
+          interpretations are offered, that is stated explicitly.
         </p>
       </section>
 
-      {/* Research Process */}
-      <section className="mt-10">
-        <h2 className="text-2xl font-bold text-navy">Research Process</h2>
-        <p className="mt-3 leading-relaxed text-navy/70">
-          Placeholder: Before any guide or review is written, we conduct a
-          structured literature review using PubMed, Google Scholar, and other
-          scientific databases. We prioritize systematic reviews and
-          meta-analyses, followed by randomized controlled trials, then
-          observational studies, then animal and in-vitro data.
+      {/* How evidence is labeled */}
+      <section className="mt-12">
+        <h2 className="text-2xl font-bold text-navy">
+          How evidence is labeled
+        </h2>
+        <p className="mt-4 leading-relaxed text-navy/70">
+          Every article on this site distinguishes between:
         </p>
-        <p className="mt-3 leading-relaxed text-navy/70">
-          Placeholder: For vendor reviews, our process includes ordering
-          products, reviewing Certificates of Analysis, monitoring long-term
-          community sentiment across forums and social channels, and assessing
-          business practices such as shipping reliability and customer support.
-          This process takes months, not days.
-        </p>
-
-        <h3 className="mt-6 text-lg font-semibold text-navy">
-          Primary Sources Only
-        </h3>
-        <p className="mt-2 leading-relaxed text-navy/70">
-          Placeholder: We read primary research papers, not just abstracts or
-          secondary summaries. Where a secondary source is used, it is
-          disclosed. We do not cite other biohacking blogs or marketing
-          materials as sources of fact.
-        </p>
-
-        <h3 className="mt-6 text-lg font-semibold text-navy">
-          Conflict of Interest Disclosure
-        </h3>
-        <p className="mt-2 leading-relaxed text-navy/70">
-          Placeholder: Any potential conflict of interest — including affiliate
-          relationships, free product samples, or paid partnerships — is
-          disclosed prominently on every relevant page. Affiliate revenue never
-          influences editorial recommendations.
-        </p>
-      </section>
-
-      {/* Fact-Checking */}
-      <section className="mt-10">
-        <h2 className="text-2xl font-bold text-navy">Fact-Checking</h2>
-        <p className="mt-3 leading-relaxed text-navy/70">
-          Placeholder: Every factual claim in our articles is reviewed before
-          publication. Citations are verified to confirm they actually support
-          the claim made. We do not rely on abstracts alone — the full text of
-          studies is reviewed whenever accessible.
-        </p>
-        <p className="mt-3 leading-relaxed text-navy/70">
-          Placeholder: When a claim cannot be directly verified from a
-          trustworthy primary source, it is either removed, clearly labeled as
-          community-reported, or flagged with a note that evidence is
-          insufficient. We set a high bar and would rather say less than
-          overstate.
-        </p>
-
-        <h3 className="mt-6 text-lg font-semibold text-navy">
-          Review Cycle
-        </h3>
-        <p className="mt-2 leading-relaxed text-navy/70">
-          Placeholder: Core content pages are reviewed on a regular cycle to
-          ensure they remain current with the latest published research. When
-          new studies are published that materially affect a topic, we update
-          the relevant pages promptly and note the revision date at the bottom
-          of each article.
+        <div className="mt-4 space-y-4">
+          {[
+            {
+              title: "Animal research",
+              desc: "Rodent models, in vitro studies, and preclinical data are labeled as such. Animal research generates hypotheses. It does not prove human outcomes.",
+            },
+            {
+              title: "Human research",
+              desc: "When human studies exist, they are cited by author, year, and sample size. The quality and size of the evidence is stated directly. A trial with 12 patients is not the same as a trial with 1,200.",
+            },
+            {
+              title: "Community protocols",
+              desc: "Dosing protocols and use patterns from the peptide community are documented as community-reported, not as medical guidance or clinical recommendations.",
+            },
+            {
+              title: "Scott\u2019s read",
+              desc: "Interpretive conclusions are labeled as \u201cmy read\u201d or \u201cmy honest read.\u201d These are informed opinions, not clinical findings.",
+            },
+          ].map((item) => (
+            <div
+              key={item.title}
+              className="rounded-lg border border-gray-200 bg-gray-50 p-4"
+            >
+              <p className="text-sm font-semibold text-navy">{item.title}</p>
+              <p className="mt-1 text-sm leading-relaxed text-navy/70">
+                {item.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+        <p className="mt-4 leading-relaxed text-navy/70">
+          This labeling is not a legal disclaimer exercise. It reflects a
+          genuine editorial commitment to not blurring those four categories
+          together — which is what most peptide content online does.
         </p>
       </section>
 
-      {/* Corrections Policy */}
-      <section className="mt-10">
-        <h2 className="text-2xl font-bold text-navy">Corrections Policy</h2>
-        <p className="mt-3 leading-relaxed text-navy/70">
-          Placeholder: We take corrections seriously. If we publish something
-          that is factually wrong, we correct it promptly and transparently.
-          Corrections are noted at the top or bottom of the affected article
-          with a brief explanation of what changed and why.
+      {/* Vendor and affiliate policy */}
+      <section className="mt-12">
+        <h2 className="text-2xl font-bold text-navy">
+          Vendor and affiliate policy
+        </h2>
+        <p className="mt-4 leading-relaxed text-navy/70">
+          Biohacking Unlocked is ad-free. The only revenue this site generates
+          comes from affiliate commissions on purchases made through vendor
+          links.
         </p>
-        <p className="mt-3 leading-relaxed text-navy/70">
-          Placeholder: We do not silently delete or rewrite content to hide
-          errors. If a material change is made to an article, the revision
-          history is noted. Readers who spot errors or have questions about our
-          sourcing are encouraged to contact us — we treat every correction
-          request as a genuine opportunity to improve.
+        <p className="mt-4 font-medium text-navy">
+          A vendor earns a place on this site by passing a COA verification
+          standard — not by having an affiliate program.
         </p>
+        <p className="mt-4 leading-relaxed text-navy/70">
+          The verification standard requires:
+        </p>
+        <ul className="mt-4 space-y-2">
+          {[
+            "Batch-specific certificates of analysis",
+            "Third-party testing from a named, verifiable laboratory",
+            "Identity confirmation by mass spectrometry",
+            "Purity confirmation by HPLC",
+            "Endotoxin and sterility testing for injectable products where available",
+            "A testing lab with an independent online presence and verification portal",
+          ].map((item) => (
+            <li
+              key={item}
+              className="flex items-start gap-3 text-sm text-navy/70"
+            >
+              <svg
+                className="mt-0.5 h-4 w-4 shrink-0 text-accent"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              {item}
+            </li>
+          ))}
+        </ul>
+        <p className="mt-4 leading-relaxed text-navy/70">
+          Affiliate commission does not influence which vendors are listed or
+          how they are described. A vendor that fails the COA standard is not
+          listed regardless of commission rate. A vendor that passes the COA
+          standard is listed based on quality, not on how much commission their
+          program offers.
+        </p>
+        <p className="mt-4 leading-relaxed text-navy/70">
+          This site does not accept payment for editorial coverage, sponsored
+          content, or product placement.
+        </p>
+      </section>
 
-        <h3 className="mt-6 text-lg font-semibold text-navy">
-          How to Report an Error
-        </h3>
-        <p className="mt-2 leading-relaxed text-navy/70">
-          Placeholder: If you believe something on this site is inaccurate,
-          please use our{" "}
+      {/* Regulatory currency */}
+      <section className="mt-12">
+        <h2 className="text-2xl font-bold text-navy">Regulatory currency</h2>
+        <p className="mt-4 leading-relaxed text-navy/70">
+          Peptide regulation in the United States is changing rapidly. The April
+          2026 FDA Category 2 update affected twelve compounds. PCAC
+          consultations are scheduled for July 2026 and February 2027 that will
+          shape the next round of changes.
+        </p>
+        <p className="mt-4 leading-relaxed text-navy/70">
+          Every article includes a &ldquo;last updated&rdquo; date and a
+          regulatory section that reflects the status as of that date. When
+          regulatory status changes materially, the relevant pages are updated.
+        </p>
+        <p className="mt-4 leading-relaxed text-navy/70">
+          Articles are not static documents. The research on this site is
+          treated as a living record that needs to stay current.
+        </p>
+      </section>
+
+      {/* What this site does not do */}
+      <section className="mt-12">
+        <h2 className="text-2xl font-bold text-navy">
+          What this site does not do
+        </h2>
+        <p className="mt-4 leading-relaxed text-navy/70">
+          Biohacking Unlocked does not:
+        </p>
+        <ul className="mt-4 space-y-2">
+          {[
+            "Provide medical advice or recommendations",
+            "Tell readers what to use or what dose to take",
+            "Present animal research as proof of human benefit",
+            "Present community protocols as clinical guidance",
+            "Accept advertising or display ads of any kind",
+            "Accept payment to feature or recommend any product or vendor",
+            "Overstate the evidence behind compounds with thin human data",
+          ].map((item) => (
+            <li
+              key={item}
+              className="flex items-start gap-3 text-sm text-navy/70"
+            >
+              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-navy/30" />
+              {item}
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* Corrections */}
+      <section className="mt-12">
+        <h2 className="text-2xl font-bold text-navy">Corrections</h2>
+        <p className="mt-4 leading-relaxed text-navy/70">
+          If something on this site is factually wrong, that is worth knowing.
+        </p>
+        <p className="mt-4 leading-relaxed text-navy/70">
+          Corrections can be submitted through the{" "}
           <Link
             href="/contact"
-            className="font-medium text-accent underline underline-offset-2 hover:text-accent-dark"
+            className="font-medium text-accent-dark underline underline-offset-2 hover:text-accent"
           >
             contact page
-          </Link>{" "}
-          to let us know. Include the article URL, the specific claim in
-          question, and any sources that support a correction. We will review
-          every submission and respond.
+          </Link>
+          . If a citation is wrong, a regulatory date is outdated, or a factual
+          claim is incorrect, it will be reviewed and corrected with a note on
+          the relevant page.
         </p>
       </section>
-
-      <div className="mt-12">
-        <AffiliateDisclosure />
-      </div>
-
-      <div className="mt-6">
-        <Link
-          href="/start-here"
-          className="inline-block rounded-lg bg-accent px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent-dark"
-        >
-          Back to Start Here
-        </Link>
-      </div>
-    </div>
+    </article>
   );
 }
