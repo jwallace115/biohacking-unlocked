@@ -8,30 +8,6 @@ export const metadata: Metadata = {
     "In-depth reviews of peptide vendors. We evaluate COA compliance, reputation, pricing, and customer service.",
 };
 
-const reviews = [
-  {
-    vendor: "Peptide Sciences",
-    href: "/reviews/peptide-sciences-review",
-    summary:
-      "One of the longest-operating research peptide vendors in the US market. Known for consistent COA compliance, broad product selection, and reliable shipping.",
-    tags: ["COA Verified", "US-Based", "Wide Selection"],
-  },
-  {
-    vendor: "Swiss Chems",
-    href: "/reviews/swiss-chems-review",
-    summary:
-      "Offers a large catalog spanning peptides, SARMs, and nootropics. Competitive pricing with third-party COAs available for major product lines.",
-    tags: ["COA Verified", "SARMs & Peptides", "Competitive Pricing"],
-  },
-  {
-    vendor: "Umbrella Labs",
-    href: "/reviews/umbrella-labs-review",
-    summary:
-      "US-based vendor specializing in SARMs and peptides. Maintains a strong community reputation with batch-specific COAs from independent laboratories.",
-    tags: ["COA Verified", "US-Based", "SARMs Specialist"],
-  },
-];
-
 export default function ReviewsPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 md:py-20">
@@ -40,10 +16,8 @@ export default function ReviewsPage() {
       </h1>
       <p className="mt-4 text-lg text-navy/70">
         Finding a trustworthy peptide vendor is not straightforward. Marketing
-        claims are cheap — what matters is verifiable COA compliance, a consistent
-        multi-year track record, and transparent business practices. Our reviews
-        are based on documented evidence, community reputation spanning multiple
-        years, and direct evaluation of each vendor's testing documentation.
+        claims are cheap — what matters is verifiable COA compliance, a
+        consistent track record, and transparent business practices.
       </p>
 
       <section className="mt-4">
@@ -64,8 +38,7 @@ export default function ReviewsPage() {
       <section className="mt-12">
         <h2 className="text-2xl font-semibold text-navy">How We Evaluate</h2>
         <p className="mt-3 text-navy/70">
-          Each vendor review covers the same core criteria to allow direct
-          comparison.
+          Each vendor review covers the same core criteria.
         </p>
         <div className="mt-6 grid gap-4 sm:grid-cols-2">
           {[
@@ -103,46 +76,91 @@ export default function ReviewsPage() {
         </div>
       </section>
 
+      {/* Ascension Peptides */}
       <section className="mt-12">
-        <h2 className="text-2xl font-semibold text-navy">Vendor Reviews</h2>
-        <div className="mt-6 space-y-4">
-          {reviews.map((review) => (
-            <Link
-              key={review.vendor}
-              href={review.href}
-              className="group block rounded-xl border border-gray-200 bg-white p-6 transition-shadow hover:shadow-lg"
-            >
-              <h3 className="text-lg font-semibold text-navy transition-colors group-hover:text-accent-dark">
-                {review.vendor} Review
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-navy/70">
-                {review.summary}
-              </p>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {review.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-navy/60"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-              <span className="mt-4 inline-block text-sm font-medium text-accent-dark">
-                Read full review &rarr;
-              </span>
-            </Link>
-          ))}
+        <h2 className="text-2xl font-semibold text-navy">
+          Our Recommended Vendor
+        </h2>
+        <div className="mt-6 rounded-xl border-2 border-accent/30 bg-white p-6">
+          <div className="flex flex-wrap items-center gap-3">
+            <h3 className="text-lg font-bold text-navy">
+              Ascension Peptides
+            </h3>
+            <span className="rounded-full bg-accent/10 px-2.5 py-0.5 text-xs font-semibold text-accent-dark">
+              Top Rated
+            </span>
+          </div>
+          <p className="mt-3 leading-relaxed text-navy/70">
+            Colorado-based. COA-verified through MZ Biolabs. Batch-specific
+            testing on all products. Use code{" "}
+            <code className="rounded bg-navy/5 px-1.5 py-0.5 text-xs font-semibold text-navy/70">
+              BIOHACKING
+            </code>{" "}
+            for 50% off your first order.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {["COA Verified", "MZ Biolabs", "US-Based", "Batch-Specific"].map(
+              (tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-navy/60"
+                >
+                  {tag}
+                </span>
+              )
+            )}
+          </div>
+          <a
+            href="https://ascensionpeptides.com/ref/Biohackingunlocked/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-block rounded-lg bg-accent px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-dark"
+          >
+            Shop Ascension Peptides &rarr;
+          </a>
+        </div>
+      </section>
+
+      {/* Swiss Chems */}
+      <section className="mt-12">
+        <h2 className="text-2xl font-semibold text-navy">
+          Pending Verification
+        </h2>
+        <div className="mt-6 rounded-xl border border-gray-200 bg-white p-6">
+          <div className="flex flex-wrap items-center gap-3">
+            <h3 className="text-lg font-semibold text-navy">Swiss Chems</h3>
+            <span className="rounded-full bg-navy/5 px-2.5 py-0.5 text-xs font-medium text-navy/50">
+              Verification Pending
+            </span>
+          </div>
+          <p className="mt-3 leading-relaxed text-navy/70">
+            Offers a large catalog spanning peptides, SARMs, and nootropics.
+            Competitive pricing with third-party COAs available for major
+            product lines. Application submitted — full review pending
+            verification of testing lab and COA workflow.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {["SARMs & Peptides", "Competitive Pricing", "Broad Catalog"].map(
+              (tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-navy/60"
+                >
+                  {tag}
+                </span>
+              )
+            )}
+          </div>
         </div>
       </section>
 
       <section className="mt-12">
         <h2 className="text-2xl font-semibold text-navy">
-          Looking for a Comparison?
+          Looking for Our Full Vendor Guide?
         </h2>
         <p className="mt-3 text-navy/70">
-          If you want to see all vetted vendors ranked side by side, our best
-          peptide sources guide compares options across all key criteria.
+          Our best peptide sources page explains the full vetting standard,
+          shows how we verify COAs, and lists every vendor that has passed.
         </p>
         <Link
           href="/best-peptide-sources"
