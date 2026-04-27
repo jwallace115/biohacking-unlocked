@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import AffiliateBox from "@/components/AffiliateBox";
+import AuthorByline from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
   title: "The GH Stack: CJC-1295 + Ipamorelin — What the Research Shows (2026)",
@@ -29,6 +30,7 @@ export default function GHStackPage() {
         The GH Stack: CJC-1295 + Ipamorelin
       </h1>
       <p className="mt-2 text-sm text-navy/50">Last updated: April 2026</p>
+      <AuthorByline />
 
       <p className="mt-6 text-lg leading-relaxed text-navy/80">
         The GH Stack caught on because the idea is simple, but the biology

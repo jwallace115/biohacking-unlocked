@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import AuthorByline from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
   title: "How to Verify a Peptide COA — The 6-Point Check (2026)",
@@ -15,6 +16,7 @@ export default function PeptideCOAExplainedPage() {
         How to Verify a Peptide COA
       </h1>
       <p className="mt-2 text-sm text-navy/50">Last updated: April 2026</p>
+      <AuthorByline />
 
       <p className="mt-6 text-lg leading-relaxed text-navy/80">
         A certificate of analysis is not a marketing document.

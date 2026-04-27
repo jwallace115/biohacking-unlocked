@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import AuthorByline from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
   title: "How to Identify Fake Peptides and Bad Vendors (2026)",
@@ -15,6 +16,7 @@ export default function HowToIdentifyFakePeptidesPage() {
         How to Identify Fake Peptides and Bad Vendors
       </h1>
       <p className="mt-2 text-sm text-navy/50">Last updated: April 2026</p>
+      <AuthorByline />
 
       <p className="mt-6 text-lg leading-relaxed text-navy/80">
         The gray-market peptide world has vendors who take quality seriously and

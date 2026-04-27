@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import AffiliateBox from "@/components/AffiliateBox";
+import AuthorByline from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
   title: "Semax: What the Research Actually Shows (2026)",
@@ -29,6 +30,7 @@ export default function SemaxPage() {
         Semax: What the Research Actually Shows
       </h1>
       <p className="mt-2 text-sm text-navy/50">Last updated: April 2026</p>
+      <AuthorByline />
 
       <p className="mt-6 text-lg leading-relaxed text-navy/80">
         Semax starts from an unexpected place.
