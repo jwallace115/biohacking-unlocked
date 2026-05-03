@@ -1,20 +1,18 @@
 import Link from "next/link";
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/peptides", label: "Peptides" },
-  { href: "/best-peptide-sources", label: "Best Sources" },
-  { href: "/reviews", label: "Reviews" },
   { href: "/start-here", label: "Start Here" },
+  { href: "/peptides", label: "Peptides" },
+  { href: "/best-peptide-sources", label: "Best Peptide Sources" },
   { href: "/about", label: "About" },
 ];
 
 const resourceLinks = [
-  { href: "/peptides/what-are-peptides", label: "What Are Peptides?" },
-  { href: "/peptides/peptide-safety", label: "Peptide Safety" },
   { href: "/peptide-coa-explained", label: "COA Explained" },
-  { href: "/peptide-quality-testing", label: "Quality Testing" },
   { href: "/how-to-identify-fake-peptides", label: "Spot Fake Peptides" },
+  { href: "/peptide-side-effects", label: "Side Effects" },
+  { href: "/peptide-quality-testing", label: "Quality Testing" },
+  { href: "/peptide-research-safety", label: "Research Safety" },
 ];
 
 const legalLinks = [

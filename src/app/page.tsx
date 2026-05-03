@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Biohacking Unlocked — Research First. Hype Never.",
+  title: "Biohacking Unlocked — Research-First Biohacking Guides",
   description:
-    "Peptides, sleep tools, recovery tech, red light therapy, and supplements — explained in plain English before you spend money or trust the hype.",
+    "Peptides, sleep tools, recovery tech, red light therapy, and supplements — explained in plain English. Research-first. Ad-free. Built by a first responder who did the work.",
 };
 
 const categories = [
