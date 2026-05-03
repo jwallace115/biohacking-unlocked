@@ -1,53 +1,67 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 
 export const metadata: Metadata = {
   title: "Biohacking Unlocked — Research First. Hype Never.",
   description:
-    "Your trusted starting point for peptides and biohacking. Evidence-based education for complete beginners. No hype, no BS — just science.",
+    "Peptides, sleep tools, recovery tech, red light therapy, and supplements — explained in plain English before you spend money or trust the hype.",
 };
 
-const hubs = [
+const categories = [
   {
     title: "Peptides",
-    description:
-      "Explore research-backed peptide compounds like BPC-157, TB-500, GHK-Cu, and more. Complete guides with mechanisms, research, and safety.",
+    body: "30+ years of animal research, early human data, and a gray market with real quality problems. We cover what the science actually shows \u2014 and what it does not.",
+    cta: "Explore Peptides",
     href: "/peptides",
-    available: true,
+    active: true,
   },
   {
-    title: "Nootropics",
-    description:
-      "Cognitive enhancers, smart drugs, and brain optimization compounds. Evidence-based guides coming soon.",
-    href: "/nootropics",
-    available: false,
+    title: "Sleep",
+    body: "Sleep is where recovery, hormones, HRV, and every other biohacking variable either works or doesn\u2019t. We start with the research \u2014 then get to the tools.",
+    href: "/start-here",
+    active: false,
   },
   {
-    title: "Recovery",
-    description:
-      "Compounds and protocols studied for tissue repair, injury recovery, and post-surgery healing.",
-    href: "/recovery",
-    available: false,
+    title: "Cold & Heat Therapy",
+    body: "Cold plunges, saunas, and contrast therapy. The research is more interesting than the marketing \u2014 and usually more useful.",
+    href: "/start-here",
+    active: false,
   },
   {
-    title: "Longevity",
-    description:
-      "Growth hormone secretagogues, anti-aging peptides, and life extension research.",
-    href: "/longevity",
-    available: false,
+    title: "Red Light Therapy",
+    body: "Wavelengths, irradiance, skin claims, recovery claims \u2014 there is a lot of noise in this category. Here is what the studies actually show.",
+    href: "/start-here",
+    active: false,
+  },
+  {
+    title: "Supplements",
+    body: "Third-party testing, ingredient evidence, and what\u2019s actually worth a closer look versus what\u2019s just a good label.",
+    href: "/start-here",
+    active: false,
   },
 ];
 
-const popularGuides = [
-  { name: "BPC-157", href: "/peptides/bpc-157" },
-  { name: "TB-500", href: "/peptides/tb-500" },
-  { name: "GHK-Cu", href: "/peptides/ghk-cu" },
-  { name: "CJC-1295", href: "/peptides/cjc-1295" },
-  { name: "Ipamorelin", href: "/peptides/ipamorelin" },
-  { name: "Retatrutide", href: "/peptides/retatrutide" },
-  { name: "Selank", href: "/peptides/selank" },
-  { name: "Semax", href: "/peptides/semax" },
+const curatedGuides = [
+  {
+    title: "BPC-157: What the Research Actually Shows",
+    desc: "The peptide that sent a lot of people down the research rabbit hole \u2014 and why the human data still matters.",
+    href: "/peptides/bpc-157",
+  },
+  {
+    title: "The Wolverine Stack: BPC-157 + TB-500",
+    desc: "Why the BPC-157 + TB-500 stack became popular, and what the evidence can and cannot say.",
+    href: "/peptides/wolverine-stack",
+  },
+  {
+    title: "How to Verify a Peptide COA",
+    desc: "A COA is not decoration. It is the receipt \u2014 if you know how to read it.",
+    href: "/peptide-coa-explained",
+  },
+  {
+    title: "How to Identify Fake Peptides",
+    desc: "The vendor question matters as much as the peptide question.",
+    href: "/how-to-identify-fake-peptides",
+  },
 ];
 
 export default function HomePage() {
@@ -55,215 +69,15 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="bg-navy text-white">
-        <div className="mx-auto max-w-6xl px-4 py-24 text-center md:py-32">
-          <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
-            Biohacking <span className="text-accent">Unlocked</span>
+        <div className="mx-auto max-w-3xl px-4 py-24 text-center md:py-32">
+          <h1 className="text-3xl font-bold leading-tight tracking-tight md:text-5xl">
+            Biohacking, researched like someone who actually has to make a
+            decision.
           </h1>
-          <p className="mx-auto mt-4 max-w-xl text-lg text-white/70 md:text-xl">
-            Research First. Hype Never.
-          </p>
-          <p className="mx-auto mt-2 max-w-lg text-sm text-white/50">
-            Your trusted starting point for evidence-based peptide and
-            biohacking education.
-          </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Link
-              href="/start-here"
-              className="inline-block rounded-lg bg-accent px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent-dark"
-            >
-              Start Here
-            </Link>
-            <Link
-              href="/best-peptide-sources"
-              className="inline-block rounded-lg border border-white/20 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
-            >
-              Find Trusted Sources
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* What is Biohacking */}
-      <section className="py-16 md:py-20">
-        <div className="mx-auto max-w-3xl px-4">
-          <h2 className="text-2xl font-bold text-navy md:text-3xl">
-            What is Biohacking?
-          </h2>
-          <p className="mt-4 text-base leading-relaxed text-navy/70">
-            Biohacking is the practice of using science, technology, and
-            self-experimentation to optimize your body and mind. It ranges from
-            simple lifestyle changes like cold exposure and sleep optimization to
-            more advanced interventions like peptide therapy and hormone
-            optimization.
-          </p>
-          <p className="mt-3 text-base leading-relaxed text-navy/70">
-            At Biohacking Unlocked, we focus on the research behind these
-            interventions. We break down complex studies into plain English so
-            you can make informed decisions. No hype, no miracle claims — just
-            what the science actually says.
-          </p>
-        </div>
-      </section>
-
-      {/* Explore by Hub */}
-      <section className="bg-gray-50 py-16 md:py-20">
-        <div className="mx-auto max-w-6xl px-4">
-          <h2 className="text-center text-2xl font-bold text-navy md:text-3xl">
-            Explore by Category
-          </h2>
-          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {hubs.map((hub) => (
-              <Link
-                key={hub.title}
-                href={hub.href}
-                className="group rounded-xl border border-gray-200 bg-white p-6 transition-shadow hover:shadow-lg"
-              >
-                <div className="flex items-center gap-2">
-                  <h3 className="text-lg font-semibold text-navy group-hover:text-accent-dark transition-colors">
-                    {hub.title}
-                  </h3>
-                  {!hub.available && (
-                    <span className="rounded-full bg-navy/5 px-2 py-0.5 text-[10px] font-medium text-navy/50">
-                      Soon
-                    </span>
-                  )}
-                </div>
-                <p className="mt-2 text-sm leading-relaxed text-navy/60">
-                  {hub.description}
-                </p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Popular Peptide Guides */}
-      <section className="py-16 md:py-20">
-        <div className="mx-auto max-w-6xl px-4">
-          <h2 className="text-2xl font-bold text-navy md:text-3xl">
-            Popular Peptide Guides
-          </h2>
-          <p className="mt-3 text-navy/70">
-            Dive into our most-read compound guides — each backed by research
-            and written in plain English.
-          </p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            {popularGuides.map((guide) => (
-              <Link
-                key={guide.href}
-                href={guide.href}
-                className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-navy hover:border-accent hover:text-accent-dark transition-colors"
-              >
-                {guide.name}
-              </Link>
-            ))}
-          </div>
-          <div className="mt-6 flex flex-wrap gap-4">
-            <Link
-              href="/peptides"
-              className="text-sm font-semibold text-accent-dark hover:underline"
-            >
-              View all peptide guides &rarr;
-            </Link>
-            <Link
-              href="/reviews"
-              className="text-sm font-semibold text-accent-dark hover:underline"
-            >
-              Read vendor reviews &rarr;
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Problem-Focused Guides */}
-      <section className="bg-gray-50 py-16 md:py-20">
-        <div className="mx-auto max-w-6xl px-4">
-          <h2 className="text-2xl font-bold text-navy md:text-3xl">
-            Peptides by Goal
-          </h2>
-          <p className="mt-3 text-navy/70">
-            Not sure which peptide is right for you? Start with your goal.
-          </p>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              { title: "Recovery", href: "/peptides-for-recovery", desc: "Injury, surgery, and exercise recovery" },
-              { title: "Skin Health", href: "/peptides-for-skin", desc: "Anti-aging, wound healing, and collagen" },
-              { title: "Fat Loss", href: "/peptides-for-fat-loss", desc: "Body composition and metabolic support" },
-              { title: "Sleep", href: "/peptides-for-sleep", desc: "Sleep quality and GH optimization" },
-              { title: "Brain Health", href: "/peptides-for-brain-health", desc: "Cognition, focus, and neuroprotection" },
-            ].map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="group rounded-xl border border-gray-200 bg-white p-5 transition-shadow hover:shadow-lg"
-              >
-                <h3 className="font-semibold text-navy group-hover:text-accent-dark transition-colors">
-                  {item.title}
-                </h3>
-                <p className="mt-1 text-sm text-navy/60">{item.desc}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Trust Signals */}
-      <section className="py-16 md:py-20">
-        <div className="mx-auto max-w-3xl px-4">
-          <h2 className="text-2xl font-bold text-navy md:text-3xl">
-            How We Vet Vendors
-          </h2>
-          <p className="mt-4 text-base leading-relaxed text-navy/70">
-            Not all peptide suppliers are created equal. We evaluate every vendor
-            against strict criteria before we recommend them:
-          </p>
-          <ul className="mt-6 space-y-3">
-            {[
-              "Third-party Certificate of Analysis (COA) verification",
-              "Community reputation across Reddit, forums, and review sites",
-              "Years of consistent operation",
-              "Responsive customer service",
-              "Legal compliance and transparent business practices",
-            ].map((item) => (
-              <li
-                key={item}
-                className="flex items-start gap-3 text-sm text-navy/70"
-              >
-                <svg
-                  className="mt-0.5 h-5 w-5 shrink-0 text-accent"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                {item}
-              </li>
-            ))}
-          </ul>
-          <Link
-            href="/best-peptide-sources"
-            className="mt-8 inline-block text-sm font-semibold text-accent-dark hover:underline"
-          >
-            See our vetted sources &rarr;
-          </Link>
-        </div>
-      </section>
-
-      {/* Bottom CTA */}
-      <section className="bg-navy text-white py-16 md:py-20">
-        <div className="mx-auto max-w-3xl px-4 text-center">
-          <h2 className="text-2xl font-bold md:text-3xl">
-            Ready to Start Your Research?
-          </h2>
-          <p className="mt-3 text-white/60">
-            Whether you&apos;re a complete beginner or looking for specific compound
-            information, we&apos;ve got you covered.
+          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/60 md:text-lg">
+            Peptides, sleep tools, recovery tech, red light therapy, and
+            supplements — explained in plain English before you spend money or
+            trust the hype.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link
@@ -276,15 +90,171 @@ export default function HomePage() {
               href="/peptides"
               className="rounded-lg border border-white/20 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
             >
-              Browse Peptides
+              Explore Peptides
             </Link>
           </div>
         </div>
       </section>
 
-      <div className="mx-auto max-w-3xl px-4 py-6">
-        <AffiliateDisclosure />
-      </div>
+      {/* Category intro */}
+      <section className="py-16 md:py-20">
+        <div className="mx-auto max-w-6xl px-4">
+          <p className="text-center text-lg font-medium text-navy md:text-xl">
+            Start with the category you are curious about.
+          </p>
+
+          {/* Category cards */}
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {categories.map((cat) => (
+              <Link
+                key={cat.title}
+                href={cat.href}
+                className={`group relative rounded-xl border p-6 transition-shadow hover:shadow-lg ${
+                  cat.active
+                    ? "border-accent/30 bg-white"
+                    : "border-gray-200 bg-gray-50/50"
+                }`}
+              >
+                {!cat.active && (
+                  <span className="absolute right-4 top-4 rounded-full bg-navy/5 px-2.5 py-0.5 text-[10px] font-medium text-navy/40">
+                    Coming Soon
+                  </span>
+                )}
+                <h3
+                  className={`text-lg font-semibold transition-colors ${
+                    cat.active
+                      ? "text-navy group-hover:text-accent-dark"
+                      : "text-navy/70"
+                  }`}
+                >
+                  {cat.title}
+                </h3>
+                <p
+                  className={`mt-2 text-sm leading-relaxed ${
+                    cat.active ? "text-navy/60" : "text-navy/40"
+                  }`}
+                >
+                  {cat.body}
+                </p>
+                {cat.active && (
+                  <span className="mt-4 inline-block text-sm font-medium text-accent-dark">
+                    {cat.cta} &rarr;
+                  </span>
+                )}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Trust blocks */}
+      <section className="bg-gray-50 py-16 md:py-20">
+        <div className="mx-auto max-w-6xl px-4">
+          <div className="grid gap-8 md:grid-cols-3">
+            <div>
+              <h3 className="text-lg font-semibold text-navy">
+                How this site works
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-navy/60">
+                Every guide on Biohacking Unlocked follows the same standard:
+                facts are cited, evidence is labeled, and uncertainty is stated
+                clearly. Animal research is labeled as animal research. Community
+                protocols are documented as community protocols. My
+                interpretation is labeled as my read.
+              </p>
+              <Link
+                href="/editorial-policy"
+                className="mt-4 inline-block text-sm font-medium text-accent-dark hover:underline"
+              >
+                Read the Editorial Policy &rarr;
+              </Link>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-navy">
+                How we make money
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-navy/60">
+                Biohacking Unlocked is ad-free. Always. The content is free. The
+                only way this site makes money is if you click a vendor or
+                product link and make a purchase — and only from vendors and
+                products that passed our vetting standard. Commission rates
+                don&apos;t change what gets recommended. If something isn&apos;t
+                worth your money, we won&apos;t link to it.
+              </p>
+              <Link
+                href="/editorial-policy"
+                className="mt-4 inline-block text-sm font-medium text-accent-dark hover:underline"
+              >
+                Full Affiliate Disclosure &rarr;
+              </Link>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-navy">
+                Who&apos;s behind this
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-navy/60">
+                Scott Williams is a firefighter and paramedic in Florida with
+                25+ years of experience. He started researching peptides because
+                coworkers were talking about them, using them, and asking
+                questions — and he wanted to know what was real, what was hype,
+                and what was still unknown. This site is where that research
+                goes.
+              </p>
+              <Link
+                href="/about"
+                className="mt-4 inline-block text-sm font-medium text-accent-dark hover:underline"
+              >
+                About Scott &rarr;
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Curated research guides */}
+      <section className="py-16 md:py-20">
+        <div className="mx-auto max-w-6xl px-4">
+          <h2 className="text-2xl font-bold text-navy md:text-3xl">
+            Research Guides Worth Reading
+          </h2>
+          <p className="mt-3 text-navy/70">
+            Start with the guides that explain how we think, not just what to
+            buy.
+          </p>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2">
+            {curatedGuides.map((guide) => (
+              <Link
+                key={guide.href}
+                href={guide.href}
+                className="group rounded-xl border border-gray-200 bg-white p-6 transition-shadow hover:shadow-lg"
+              >
+                <h3 className="font-semibold text-navy group-hover:text-accent-dark transition-colors">
+                  {guide.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-navy/60">
+                  {guide.desc}
+                </p>
+                <span className="mt-3 inline-block text-sm font-medium text-accent-dark">
+                  Read guide &rarr;
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Bottom CTA */}
+      <section className="bg-navy py-16 text-center text-white md:py-20">
+        <div className="mx-auto max-w-xl px-4">
+          <p className="text-sm text-white/50">Not sure where to start?</p>
+          <Link
+            href="/start-here"
+            className="mt-4 inline-block rounded-lg bg-accent px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent-dark"
+          >
+            Start Here
+          </Link>
+        </div>
+      </section>
     </>
   );
 }

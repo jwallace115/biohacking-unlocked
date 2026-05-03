@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const topLinks = [
-  { href: "/", label: "Home" },
+  { href: "/start-here", label: "Start Here" },
   { href: "/best-peptide-sources", label: "Best Sources" },
   { href: "/about", label: "About" },
 ];
@@ -41,10 +41,10 @@ export default function Navbar() {
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-6">
           <Link
-            href="/"
+            href="/start-here"
             className="text-sm font-medium text-white/80 hover:text-white transition-colors"
           >
-            Home
+            Start Here
           </Link>
 
           {/* Peptides dropdown */}
