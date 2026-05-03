@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Research vs Pharmaceutical Peptides — Key Differences",
   description:
     "Understand the differences between research-grade and pharmaceutical-grade peptides. Quality, regulation, and what it means for you.",
+  robots: { index: false, follow: false },
 };
 
 export default function ResearchVsPharmaPeptidesPage() {

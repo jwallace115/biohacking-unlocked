@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Peptide Safety — What You Need to Know",
   description:
     "Understanding peptide safety: risks, side effects, quality concerns, and how to minimize harm. Research-based safety guide.",
+  robots: { index: false, follow: false },
 };
 
 export default function PeptideSafetyPage() {

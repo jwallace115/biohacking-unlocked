@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "How to Store Peptides — Proper Storage & Handling Guide",
   description:
     "Learn how to properly store, reconstitute, and handle peptides to maintain potency. Temperature, light, and storage best practices.",
+  robots: { index: false, follow: false },
 };
 
 export default function HowToStorePeptidesPage() {

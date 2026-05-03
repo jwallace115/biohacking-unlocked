@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "How Peptides Work — Mechanisms of Action Explained",
   description:
     "Understand the science behind how peptides work in your body. From receptor binding to cellular signaling — explained simply.",
+  robots: { index: false, follow: false },
 };
 
 export default function HowPeptidesWorkPage() {

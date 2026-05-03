@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "What Are Peptides? — Complete Beginner's Guide",
   description:
     "Learn what peptides are, how they work in your body, and why they matter for biohacking. Evidence-based guide for beginners.",
+  robots: { index: false, follow: false },
 };
 
 export default function WhatArePeptidesPage() {
