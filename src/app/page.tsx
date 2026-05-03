@@ -11,32 +11,27 @@ const categories = [
   {
     title: "Peptides",
     body: "30+ years of animal research, early human data, and a gray market with real quality problems. We cover what the science actually shows \u2014 and what it does not.",
-    cta: "Explore Peptides",
     href: "/peptides",
     active: true,
   },
   {
     title: "Sleep",
     body: "Sleep is where recovery, hormones, HRV, and every other biohacking variable either works or doesn\u2019t. We start with the research \u2014 then get to the tools.",
-    href: "/start-here",
     active: false,
   },
   {
     title: "Cold & Heat Therapy",
     body: "Cold plunges, saunas, and contrast therapy. The research is more interesting than the marketing \u2014 and usually more useful.",
-    href: "/start-here",
     active: false,
   },
   {
     title: "Red Light Therapy",
     body: "Wavelengths, irradiance, skin claims, recovery claims \u2014 there is a lot of noise in this category. Here is what the studies actually show.",
-    href: "/start-here",
     active: false,
   },
   {
     title: "Supplements",
     body: "Third-party testing, ingredient evidence, and what\u2019s actually worth a closer look versus what\u2019s just a good label.",
-    href: "/start-here",
     active: false,
   },
 ];
@@ -78,70 +73,54 @@ export default function HomePage() {
             supplements — explained in plain English before you spend money or
             trust the hype.
           </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Link
-              href="/start-here"
-              className="rounded-lg bg-accent px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent-dark"
-            >
-              Start Here
-            </Link>
-            <Link
-              href="/peptides"
-              className="rounded-lg border border-white/20 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
-            >
-              Explore Peptides
-            </Link>
-          </div>
         </div>
       </section>
 
       {/* Category intro */}
       <section className="py-16 md:py-20">
         <div className="mx-auto max-w-6xl px-4">
-          <p className="text-center text-lg font-medium text-navy md:text-xl">
+          <p className="mx-auto max-w-2xl text-center text-base leading-relaxed text-navy/50">
+            Biohacking is the practice of using research, tools, and lifestyle
+            changes to optimize how your body and mind perform. We cover the
+            ones worth understanding.
+          </p>
+          <p className="mt-8 text-center text-lg font-medium text-navy md:text-xl">
             Start with the category you are curious about.
           </p>
 
           {/* Category cards */}
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {categories.map((cat) => (
-              <Link
-                key={cat.title}
-                href={cat.href}
-                className={`group relative rounded-xl border p-6 transition-shadow hover:shadow-lg ${
-                  cat.active
-                    ? "border-accent/30 bg-white"
-                    : "border-gray-200 bg-gray-50/50"
-                }`}
-              >
-                {!cat.active && (
+            {categories.map((cat) =>
+              cat.active ? (
+                <Link
+                  key={cat.title}
+                  href={cat.href!}
+                  className="group relative rounded-xl border border-accent/30 bg-white p-6 transition-shadow hover:shadow-lg"
+                >
+                  <h3 className="text-lg font-semibold text-navy transition-colors group-hover:text-accent-dark">
+                    {cat.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-navy/60">
+                    {cat.body}
+                  </p>
+                </Link>
+              ) : (
+                <div
+                  key={cat.title}
+                  className="relative rounded-xl border border-gray-200 bg-gray-50/50 p-6"
+                >
                   <span className="absolute right-4 top-4 rounded-full bg-navy/5 px-2.5 py-0.5 text-[10px] font-medium text-navy/40">
                     Coming Soon
                   </span>
-                )}
-                <h3
-                  className={`text-lg font-semibold transition-colors ${
-                    cat.active
-                      ? "text-navy group-hover:text-accent-dark"
-                      : "text-navy/70"
-                  }`}
-                >
-                  {cat.title}
-                </h3>
-                <p
-                  className={`mt-2 text-sm leading-relaxed ${
-                    cat.active ? "text-navy/60" : "text-navy/40"
-                  }`}
-                >
-                  {cat.body}
-                </p>
-                {cat.active && (
-                  <span className="mt-4 inline-block text-sm font-medium text-accent-dark">
-                    {cat.cta} &rarr;
-                  </span>
-                )}
-              </Link>
-            ))}
+                  <h3 className="text-lg font-semibold text-navy/70">
+                    {cat.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-navy/40">
+                    {cat.body}
+                  </p>
+                </div>
+              )
+            )}
           </div>
         </div>
       </section>
