@@ -71,8 +71,7 @@ export default function HomePage() {
       <section className="bg-navy text-white">
         <div className="mx-auto max-w-3xl px-4 py-24 text-center md:py-32">
           <h1 className="text-3xl font-bold leading-tight tracking-tight md:text-5xl">
-            Biohacking, researched like someone who actually has to make a
-            decision.
+            Biohacking, no hype. Just the research.
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/60 md:text-lg">
             Peptides, sleep tools, recovery tech, red light therapy, and
